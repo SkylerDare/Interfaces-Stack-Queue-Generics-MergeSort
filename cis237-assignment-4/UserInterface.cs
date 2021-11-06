@@ -28,7 +28,9 @@ namespace cis237_assignment_4
             Console.WriteLine("What would you like to do?");
             Console.WriteLine("1. Add a new droid to the system");
             Console.WriteLine("2. Print the list of droids out");
-            Console.WriteLine("3. Exit the program");
+            Console.WriteLine("3. Categorize the list");
+            Console.WriteLine("4. Sort by Total Cost");
+            Console.WriteLine("5. Exit the program");
         }
 
         // Method to get a menu choice
@@ -337,6 +339,18 @@ namespace cis237_assignment_4
                     this.droidCollection.Add(Material, Color, standardOptions[0], standardOptions[1], standardOptions[2], astromechOption, astromechNumberOfShips);
                     break;
             }
+        }
+        /// <summary>
+        /// Method to call for the list to be categorized, displays to the user when it is complete.
+        /// </summary>
+        public void categorizeList()
+        {
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("Categorizing the list");
+            this.droidCollection.CategorizeList();
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Categorizing Complete!");
+            Console.ForegroundColor = ConsoleColor.Gray;
         }
     }
 }

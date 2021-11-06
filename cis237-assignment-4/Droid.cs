@@ -129,5 +129,10 @@ namespace cis237_assignment_4
 
             return colorCost;
         }
+
+        public int CompareTo(object obj)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
