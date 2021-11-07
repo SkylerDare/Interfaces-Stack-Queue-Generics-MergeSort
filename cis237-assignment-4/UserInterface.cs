@@ -343,13 +343,23 @@ namespace cis237_assignment_4
         /// <summary>
         /// Method to call for the list to be categorized, displays to the user when it is complete.
         /// </summary>
-        public void categorizeList()
+        public void CategorizeList()
         {
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("Categorizing the list");
             this.droidCollection.CategorizeList();
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Categorizing Complete!");
+            Console.ForegroundColor = ConsoleColor.Gray;
+        }
+
+        public void SortList()
+        {
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("Sorting the list by total cost");
+            this.droidCollection.SortByCost();
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Sort Complete!");
             Console.ForegroundColor = ConsoleColor.Gray;
         }
     }

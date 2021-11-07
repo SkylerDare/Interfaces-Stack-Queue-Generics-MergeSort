@@ -132,7 +132,25 @@ namespace cis237_assignment_4
 
         public int CompareTo(object obj)
         {
-            throw new NotImplementedException();
+            if (obj == null)
+            {
+                return 1;
+            }
+
+            IDroid otherDroid = obj as IDroid;
+            
+            otherDroid.CalculateTotalCost();
+
+            if (otherDroid.TotalCost != 0.00m)
+            {
+                this.CalculateTotalCost();
+                return this.totalCost.CompareTo(otherDroid.TotalCost);
+            }
+            else
+            {
+                throw new Exception("Object is not a Droid");
+            }
         }
+
     }
 }

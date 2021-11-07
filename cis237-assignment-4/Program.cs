@@ -40,11 +40,11 @@ namespace cis237_assignment_4
                         break;
 
                     case 3:
-                        userInterface.categorizeList();
+                        userInterface.CategorizeList();
                         break;
 
                     case 4:
-                        //droid.SortByCost();
+                        userInterface.SortList();
                         break;
                 }
                 // Re-display the menu, and re-prompt for the choice

@@ -27,6 +27,14 @@ namespace cis237_assignment_4
             droidCollection[5] = new AstromechDroid("Tears Of A Jedi", "White", false, false, false, false, 9);
             droidCollection[6] = new JanitorDroid("Carbonite", "Green", false, true, true, false, false);
             droidCollection[7] = new UtilityDroid("Vanadium", "Blue", true, false, false);
+            droidCollection[8] = new ProtocolDroid("Carbonite", "White", 2);
+            droidCollection[9] = new AstromechDroid("Vanadium", "Red", true, true, true, true, 4);
+            droidCollection[10] = new JanitorDroid("Quadranium", "Blue", true, false, false, true, true);
+            droidCollection[11] = new UtilityDroid("Tears Of A Jedi", "Green", false, true, true);
+            droidCollection[12] = new ProtocolDroid("Quadranium", "Red", 6);
+            droidCollection[13] = new AstromechDroid("Tears Of A Jedi", "White", false, false, false, false, 9);
+            droidCollection[14] = new JanitorDroid("Carbonite", "Green", false, true, true, false, false);
+            droidCollection[15] = new UtilityDroid("Vanadium", "Blue", true, false, false);
 
             // Set length of collection to 0
             lengthOfCollection = 0;
@@ -227,7 +235,8 @@ namespace cis237_assignment_4
 
         public void SortByCost()
         {
-
+            MergeSort sort = new MergeSort();
+            sort.StartSort(droidCollection);
         }
 
     }
