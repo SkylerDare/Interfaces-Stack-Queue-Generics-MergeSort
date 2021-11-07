@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Skyler Dare
+//CIS237
+//11/9/21
+using System;
 
 namespace cis237_assignment_4
 {
@@ -11,8 +14,6 @@ namespace cis237_assignment_4
 
             // Create a user interface and pass the droidCollection into it as a dependency
             UserInterface userInterface = new UserInterface(droidCollection);
-
-            
 
             // Display the main greeting for the program
             userInterface.DisplayGreeting();
@@ -38,11 +39,11 @@ namespace cis237_assignment_4
                     case 2:
                         userInterface.PrintDroidList();
                         break;
-
+                    // Choose to Categorize the list by droid type
                     case 3:
                         userInterface.CategorizeList();
                         break;
-
+                    // Choose to sort the list by total cost
                     case 4:
                         userInterface.SortList();
                         break;

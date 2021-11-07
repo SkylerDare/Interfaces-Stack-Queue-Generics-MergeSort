@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Skyler Dare
+//CIS237
+//11/9/21
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -86,28 +89,6 @@ namespace cis237_assignment_4
                 _tail = null;
             }
             return Data;
-        }
-
-        public void Display()
-        {
-            if (_head == null)
-            {
-                Console.WriteLine("Stack Overflow");
-                return;
-            }
-            if (_tail == null)
-            {
-                Console.WriteLine("Stack Overflow");
-                return;
-            }
-            else
-            {
-                Node currentHead = _head;
-                Node currentTail = _tail;
-                Console.WriteLine("Head: " + currentHead.Data);
-                Console.WriteLine("Tail: " + currentTail.Data);
-                Console.WriteLine();
-            }
         }
     }
 }

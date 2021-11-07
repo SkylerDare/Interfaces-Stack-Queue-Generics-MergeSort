@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Skyler Dare
+//CIS237
+//11/9/21
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -45,7 +48,7 @@ namespace cis237_assignment_4
         {
             if (_top == null)
             {
-                Console.WriteLine("Stack Overflow");
+                Console.WriteLine("Stack Empty");
                 return;
             }
 
@@ -64,25 +67,5 @@ namespace cis237_assignment_4
                 return default(T);
             }
         }
-
-        public void Display()
-        {
-            if (_top == null)
-            {
-                Console.WriteLine("Stack Overflow");
-                return;
-            }
-            else
-            {
-                Node current = _top;
-                while(current != null)
-                {
-                    Console.WriteLine(current.Data);
-                    current = current.Next;
-                }
-                Console.WriteLine();
-            }
-        }
-
     }
 }

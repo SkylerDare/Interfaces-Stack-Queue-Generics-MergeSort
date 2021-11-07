@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Skyler Dare
+//CIS237
+//11/9/21
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -352,7 +355,9 @@ namespace cis237_assignment_4
             Console.WriteLine("Categorizing Complete!");
             Console.ForegroundColor = ConsoleColor.Gray;
         }
-
+        /// <summary>
+        /// Method call to sort the list by total cost, displays to the user when it is complete.
+        /// </summary>
         public void SortList()
         {
             Console.ForegroundColor = ConsoleColor.Cyan;

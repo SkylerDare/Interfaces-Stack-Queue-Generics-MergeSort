@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Skyler Dare
+//CIS237
+//11/9/21
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -15,7 +18,6 @@ namespace cis237_assignment_4
         // Method to get the data for a droid into a nicely formated string that can be output.
         string GetPrintString();
         void CategorizeList();
-
         void SortByCost();
     }
 }

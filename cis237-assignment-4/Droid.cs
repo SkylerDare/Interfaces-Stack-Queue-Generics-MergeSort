@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Skyler Dare
+//CIS237
+//11/9/21
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -129,7 +132,11 @@ namespace cis237_assignment_4
 
             return colorCost;
         }
-
+        /// <summary>
+        /// Calculates the total cost of a droid and then compares the total cost values of 2 droids.
+        /// </summary>
+        /// <param name="obj">the passed in droid</param>
+        /// <returns>if the value to compare to is higher or lower in sort order</returns>
         public int CompareTo(object obj)
         {
             if (obj == null)
@@ -151,6 +158,5 @@ namespace cis237_assignment_4
                 throw new Exception("Object is not a Droid");
             }
         }
-
     }
 }
