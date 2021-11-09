@@ -26,7 +26,10 @@ namespace cis237_assignment_4
                 return _top == null;
             }
         }
-
+        /// <summary>
+        /// pushes data onto the stack
+        /// </summary>
+        /// <param name="Data">generic data to be added to the stack</param>
         public void Push(T Data)
         {
             Node temp = new Node();
@@ -43,7 +46,9 @@ namespace cis237_assignment_4
 
             _top = temp;
         }
-
+        /// <summary>
+        /// removes data from the stack
+        /// </summary>
         public void Pop()
         {
             if (_top == null)
@@ -54,7 +59,10 @@ namespace cis237_assignment_4
 
             _top = _top.Next;
         }
-
+        /// <summary>
+        /// checks the top of the stack
+        /// </summary>
+        /// <returns>data at the top of the stack</returns>
         public T Peek()
         {
             if (!IsEmpty)

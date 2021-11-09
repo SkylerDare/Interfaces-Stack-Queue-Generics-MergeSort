@@ -54,7 +54,10 @@ namespace cis237_assignment_4
                 return _head.Data;
             }
         }
-
+        /// <summary>
+        /// adds data to the back of the queue
+        /// </summary>
+        /// <param name="Data">generic data to be added to the queue</param>
         public void Enqueue(T Data)
         {
             Node temp = new Node(Data);
@@ -71,7 +74,10 @@ namespace cis237_assignment_4
             _tail = temp;
             _size++;
         }
-
+        /// <summary>
+        /// removes data from the front of the queue
+        /// </summary>
+        /// <returns>the data that was removed from the queue</returns>
         public T Dequeue()
         {
             if (IsEmpty)
